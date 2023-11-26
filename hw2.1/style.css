@@ -1,0 +1,50 @@
+body{
+    background-color:rgb(10, 10, 44);
+}
+
+header{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px
+    
+}
+
+.audio_content {
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button-container {
+    display: flex;
+    gap: 30px;
+}
+
+.sound-button {
+    position: relative;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sound-button img {
+    display: block; /* Make the image a block element to control its dimensions */
+}
+
+.sound-button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px; /* Adjust the font size as needed */
+    color: rgb(10, 10, 44); /* Set the text color */
+    font-weight: bold;
+}

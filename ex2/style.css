@@ -10,3 +10,8 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+.highlight{
+    font-weight: bold;
+      color: red;
+}

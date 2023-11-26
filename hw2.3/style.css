@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url("/hw2.3/hw2.3.2/img/img1.jpg") center/cover fixed;
+    display: flex;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.countdown-container {
+    width: 100%;
+    
+}
+
+h1 {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.countdown {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.box span {
+    display: block;
+    font-size: 3em;
+}
+
+.box #seconds{
+    color: rgb(216, 125, 125);
+}

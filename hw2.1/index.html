@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>LAB 2 - HW2.1</title>
+</head>
+
+<body>
+    <header>DRUM <img src="/hw2.1/img/icons8-snare-drum-96.png"> KIT</header>
+    <section class="audio_content">
+        <div class="button-container">
+            <button id="button1" class="sound-button" data-sound="sound/sound1.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 1">
+                <span>A</span>
+            </button>
+            <button id="button2" class="sound-button" data-sound="sound/sound2.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 2">
+                <span>B</span>
+            </button>
+            <button id="button3" class="sound-button" data-sound="sound/sound3.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 3">
+                <span>C</span>
+            </button>
+            <button id="button4" class="sound-button" data-sound="sound/sound4.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 4">
+                <span>D</span>
+            </button>
+            <button id="button5" class="sound-button" data-sound="sound/sound5.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 5">
+                <span>E</span>
+            </button>
+            <button id="button6" class="sound-button" data-sound="sound/sound6.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 6">
+                <span>F</span>
+            </button>
+            <button id="button7" class="sound-button" data-sound="sound/sound7.mp3">
+                <img src="/hw2.1/img/icons8-snare-drum-96.png" alt="Button 7">
+                <span>D</span>
+            </button>
+        </div>
+        
+    </section>
+    <script>
+               document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".sound-button");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            playSound(button.dataset.sound);
+        });
+
+        button.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                playSound(button.dataset.sound);
+            }
+        });
+    });
+
+    function playSound(soundFile) {
+        const audio = new Audio(soundFile);
+        audio.play();
+    }
+});
+
+    </script>
+</body>
+
+</html>

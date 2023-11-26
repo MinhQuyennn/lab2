@@ -1,0 +1,172 @@
+body {
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+}
+
+
+.menu{
+    display: flex;
+    width: 100%;
+    background: black;
+    color: white;
+}
+.menu h1{
+    font-size: 30px;
+}
+
+.menu ul{
+    width: 89%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:30%;
+    
+}
+
+.menu li{
+    display: inline;
+    color: white;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu li:hover {
+    background-color:rgb(54, 185, 185); /* Set the background color on hover */
+    padding: 28px; 
+}
+
+.pro5 {
+    width: 100%;
+    border: 1px solid #515050a1;
+    padding: 0px 20px 0px 20px;
+}
+
+.pro5_1 {
+    display: flex;
+    flex-direction: column;
+
+}
+.pro5_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pro5_2 {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #515050a1;
+
+}
+
+
+
+.text_pro5_1 {
+    font-size: 40px;
+    color: rgb(54, 185, 185);
+}
+
+.text_pro5 {
+    color: rgb(54, 185, 185);
+}
+
+.Detail,
+.pic1,
+.About_me {
+    width: 50%;
+}
+
+.pic1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CV {
+    display: flex;
+
+}
+
+.CV2{
+    margin-top: 20px;
+    border-top: 1px solid #515050a1;
+
+}
+
+.Exp {
+    width: 100%;
+    background-color: beige;
+
+}
+
+.Exp1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.edu,
+.working {
+    margin-left: 20px;
+    border-top: 1px solid #515050a1;
+
+}
+
+.edu1_0,
+.working1 {
+    display: flex;
+}
+
+.edu1_1,
+.content {
+    width: 50%;
+}
+
+.contentSkill{
+    display: flex;
+}
+
+.tdtile {
+    padding-right: 50px;
+}
+.skills2,.skills1{
+    width: 50%;
+}
+
+.Git{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textGit{
+    color: gray;
+}
+
+.Gitbut{
+    background-color: rgb(54, 185, 185);
+    color:white;;
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.skill, .lang{
+    margin-left: 20px;
+    border-top: 1px solid #515050a1;
+}
+
+.lang{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
